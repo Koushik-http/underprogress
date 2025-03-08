@@ -4,6 +4,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const authRoutes = require('./routes/authRoutes');
+const eventRoutes = require('./routes/eventRoutes');
 
 const app = express();
 app.use(express.json());
@@ -20,7 +21,12 @@ mongoose
 
 // Routes
 app.use('/api/auth', authRoutes);
+app.use('/api/events', eventRoutes);
 
+app.use((err, req, res, next) => {
+  console.error(err.stack);
+  res.status(500).json({ message: 'Server error' });
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
