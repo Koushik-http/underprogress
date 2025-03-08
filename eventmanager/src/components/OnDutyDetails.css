@@ -1,0 +1,83 @@
+/* OnDutyDetails.css */
+.onduty-system {
+    padding: 2rem;
+  }
+  
+  .section-header {
+    margin-bottom: 2rem;
+  }
+  
+  .section-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #660000;
+  }
+  
+  .filter-bar {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow:  0 2px 5px rgba(0, 0, 0, 0.47);
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .filter-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 0.75rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    font-weight: 600;
+    color: #555;
+    background-color: #f9f9f9;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    text-align: center;
+    color: #777;
+  }
+  
+  .empty-state-icon {
+    margin-bottom: 1rem;
+    color: #ccc;
+  }
